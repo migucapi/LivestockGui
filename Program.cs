@@ -2,6 +2,8 @@ namespace LivestockGui
 {
     internal static class Program
     {
+
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -10,8 +12,17 @@ namespace LivestockGui
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
+
+            // FarmManager
+            FarmManager farmManager = new FarmManager();
+
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new FrmHomepage(farmManager));
         }
+
+
+
     }
 }
+
