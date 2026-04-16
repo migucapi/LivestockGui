@@ -28,110 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            comboBox1 = new ComboBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
+            lblAddAnimalIntake = new Label();
+            lblRecordDailyFeed = new Label();
+            lblChooseAnimal = new Label();
+            cbxChooseAnimal = new ComboBox();
+            lblMonday = new Label();
+            lblTuesday = new Label();
+            lblWednesday = new Label();
+            lblFriday = new Label();
+            lblThursday = new Label();
             label9 = new Label();
-            label10 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox7 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            textBox6 = new TextBox();
-            label11 = new Label();
+            lblSunday = new Label();
+            txbMonday = new TextBox();
+            txbTuesday = new TextBox();
+            txbWednesday = new TextBox();
+            txbThursday = new TextBox();
+            txbFriday = new TextBox();
+            txbSunday = new TextBox();
+            btnSaveAnimalIntake = new Button();
+            btnHomepage = new Button();
+            txbSaturday = new TextBox();
+            lblSaturday = new Label();
             SuspendLayout();
             // 
-            // label1
+            // lblAddAnimalIntake
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 30F);
-            label1.Location = new Point(214, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(353, 54);
-            label1.TabIndex = 1;
-            label1.Text = "Livestock Manager";
+            lblAddAnimalIntake.AutoSize = true;
+            lblAddAnimalIntake.Font = new Font("Segoe UI", 30F);
+            lblAddAnimalIntake.Location = new Point(214, 9);
+            lblAddAnimalIntake.Name = "lblAddAnimalIntake";
+            lblAddAnimalIntake.Size = new Size(353, 54);
+            lblAddAnimalIntake.TabIndex = 1;
+            lblAddAnimalIntake.Text = "Livestock Manager";
             // 
-            // label2
+            // lblRecordDailyFeed
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(12, 76);
-            label2.Name = "label2";
-            label2.Size = new Size(135, 21);
-            label2.TabIndex = 2;
-            label2.Text = "Record Daily Feed";
+            lblRecordDailyFeed.AutoSize = true;
+            lblRecordDailyFeed.Font = new Font("Segoe UI", 12F);
+            lblRecordDailyFeed.Location = new Point(12, 76);
+            lblRecordDailyFeed.Name = "lblRecordDailyFeed";
+            lblRecordDailyFeed.Size = new Size(135, 21);
+            lblRecordDailyFeed.TabIndex = 2;
+            lblRecordDailyFeed.Text = "Record Daily Feed";
             // 
-            // label3
+            // lblChooseAnimal
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 110);
-            label3.Name = "label3";
-            label3.Size = new Size(91, 15);
-            label3.TabIndex = 9;
-            label3.Text = "Choose Animal:";
+            lblChooseAnimal.AutoSize = true;
+            lblChooseAnimal.Location = new Point(12, 110);
+            lblChooseAnimal.Name = "lblChooseAnimal";
+            lblChooseAnimal.Size = new Size(91, 15);
+            lblChooseAnimal.TabIndex = 9;
+            lblChooseAnimal.Text = "Choose Animal:";
             // 
-            // comboBox1
+            // cbxChooseAnimal
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(12, 128);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(254, 23);
-            comboBox1.TabIndex = 10;
+            cbxChooseAnimal.FormattingEnabled = true;
+            cbxChooseAnimal.Location = new Point(12, 128);
+            cbxChooseAnimal.Name = "cbxChooseAnimal";
+            cbxChooseAnimal.Size = new Size(254, 23);
+            cbxChooseAnimal.TabIndex = 10;
             // 
-            // label4
+            // lblMonday
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(12, 166);
-            label4.Name = "label4";
-            label4.Size = new Size(78, 15);
-            label4.TabIndex = 11;
-            label4.Text = "Monday (kg):";
+            lblMonday.AutoSize = true;
+            lblMonday.Location = new Point(12, 166);
+            lblMonday.Name = "lblMonday";
+            lblMonday.Size = new Size(78, 15);
+            lblMonday.TabIndex = 11;
+            lblMonday.Text = "Monday (kg):";
             // 
-            // label5
+            // lblTuesday
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(12, 218);
-            label5.Name = "label5";
-            label5.Size = new Size(77, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Tuesday (kg):";
+            lblTuesday.AutoSize = true;
+            lblTuesday.Location = new Point(12, 218);
+            lblTuesday.Name = "lblTuesday";
+            lblTuesday.Size = new Size(77, 15);
+            lblTuesday.TabIndex = 12;
+            lblTuesday.Text = "Tuesday (kg):";
             // 
-            // label6
+            // lblWednesday
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(12, 274);
-            label6.Name = "label6";
-            label6.Size = new Size(95, 15);
-            label6.TabIndex = 13;
-            label6.Text = "Wednesday (kg):";
+            lblWednesday.AutoSize = true;
+            lblWednesday.Location = new Point(12, 274);
+            lblWednesday.Name = "lblWednesday";
+            lblWednesday.Size = new Size(95, 15);
+            lblWednesday.TabIndex = 13;
+            lblWednesday.Text = "Wednesday (kg):";
             // 
-            // label7
+            // lblFriday
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(310, 166);
-            label7.Name = "label7";
-            label7.Size = new Size(66, 15);
-            label7.TabIndex = 14;
-            label7.Text = "Friday (kg):";
+            lblFriday.AutoSize = true;
+            lblFriday.Location = new Point(310, 166);
+            lblFriday.Name = "lblFriday";
+            lblFriday.Size = new Size(66, 15);
+            lblFriday.TabIndex = 14;
+            lblFriday.Text = "Friday (kg):";
             // 
-            // label8
+            // lblThursday
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(310, 110);
-            label8.Name = "label8";
-            label8.Size = new Size(82, 15);
-            label8.TabIndex = 15;
-            label8.Text = "Thursday (kg):";
+            lblThursday.AutoSize = true;
+            lblThursday.Location = new Point(310, 110);
+            lblThursday.Name = "lblThursday";
+            lblThursday.Size = new Size(82, 15);
+            lblThursday.TabIndex = 15;
+            lblThursday.Text = "Thursday (kg):";
             // 
             // label9
             // 
@@ -140,146 +140,146 @@
             label9.Size = new Size(100, 23);
             label9.TabIndex = 28;
             // 
-            // label10
+            // lblSunday
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(310, 274);
-            label10.Name = "label10";
-            label10.Size = new Size(73, 15);
-            label10.TabIndex = 17;
-            label10.Text = "Sunday (kg):";
+            lblSunday.AutoSize = true;
+            lblSunday.Location = new Point(310, 274);
+            lblSunday.Name = "lblSunday";
+            lblSunday.Size = new Size(73, 15);
+            lblSunday.TabIndex = 17;
+            lblSunday.Text = "Sunday (kg):";
             // 
-            // textBox1
+            // txbMonday
             // 
-            textBox1.Location = new Point(12, 184);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(257, 23);
-            textBox1.TabIndex = 18;
+            txbMonday.Location = new Point(12, 184);
+            txbMonday.Name = "txbMonday";
+            txbMonday.Size = new Size(257, 23);
+            txbMonday.TabIndex = 18;
             // 
-            // textBox2
+            // txbTuesday
             // 
-            textBox2.Location = new Point(12, 236);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(257, 23);
-            textBox2.TabIndex = 19;
+            txbTuesday.Location = new Point(12, 236);
+            txbTuesday.Name = "txbTuesday";
+            txbTuesday.Size = new Size(257, 23);
+            txbTuesday.TabIndex = 19;
             // 
-            // textBox3
+            // txbWednesday
             // 
-            textBox3.Location = new Point(12, 292);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(257, 23);
-            textBox3.TabIndex = 20;
+            txbWednesday.Location = new Point(12, 292);
+            txbWednesday.Name = "txbWednesday";
+            txbWednesday.Size = new Size(257, 23);
+            txbWednesday.TabIndex = 20;
             // 
-            // textBox4
+            // txbThursday
             // 
-            textBox4.Location = new Point(310, 128);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(257, 23);
-            textBox4.TabIndex = 21;
+            txbThursday.Location = new Point(310, 128);
+            txbThursday.Name = "txbThursday";
+            txbThursday.Size = new Size(257, 23);
+            txbThursday.TabIndex = 21;
             // 
-            // textBox5
+            // txbFriday
             // 
-            textBox5.Location = new Point(310, 184);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(257, 23);
-            textBox5.TabIndex = 22;
+            txbFriday.Location = new Point(310, 184);
+            txbFriday.Name = "txbFriday";
+            txbFriday.Size = new Size(257, 23);
+            txbFriday.TabIndex = 22;
             // 
-            // textBox7
+            // txbSunday
             // 
-            textBox7.Location = new Point(310, 292);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(257, 23);
-            textBox7.TabIndex = 24;
+            txbSunday.Location = new Point(310, 292);
+            txbSunday.Name = "txbSunday";
+            txbSunday.Size = new Size(257, 23);
+            txbSunday.TabIndex = 24;
             // 
-            // button1
+            // btnSaveAnimalIntake
             // 
-            button1.Location = new Point(12, 336);
-            button1.Name = "button1";
-            button1.Size = new Size(174, 28);
-            button1.TabIndex = 25;
-            button1.Text = "Save Animal Intake";
-            button1.UseVisualStyleBackColor = true;
+            btnSaveAnimalIntake.Location = new Point(12, 336);
+            btnSaveAnimalIntake.Name = "btnSaveAnimalIntake";
+            btnSaveAnimalIntake.Size = new Size(174, 28);
+            btnSaveAnimalIntake.TabIndex = 25;
+            btnSaveAnimalIntake.Text = "Save Animal Intake";
+            btnSaveAnimalIntake.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHomepage
             // 
-            button2.Location = new Point(192, 336);
-            button2.Name = "button2";
-            button2.Size = new Size(174, 28);
-            button2.TabIndex = 26;
-            button2.Text = "Back to Homepage";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnHomepage.Location = new Point(192, 336);
+            btnHomepage.Name = "btnHomepage";
+            btnHomepage.Size = new Size(174, 28);
+            btnHomepage.TabIndex = 26;
+            btnHomepage.Text = "Back to Homepage";
+            btnHomepage.UseVisualStyleBackColor = true;
+            btnHomepage.Click += button2_Click;
             // 
-            // textBox6
+            // txbSaturday
             // 
-            textBox6.Location = new Point(310, 236);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(257, 23);
-            textBox6.TabIndex = 30;
+            txbSaturday.Location = new Point(310, 236);
+            txbSaturday.Name = "txbSaturday";
+            txbSaturday.Size = new Size(257, 23);
+            txbSaturday.TabIndex = 30;
             // 
-            // label11
+            // lblSaturday
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(310, 218);
-            label11.Name = "label11";
-            label11.Size = new Size(80, 15);
-            label11.TabIndex = 29;
-            label11.Text = "Saturday (kg):";
+            lblSaturday.AutoSize = true;
+            lblSaturday.Location = new Point(310, 218);
+            lblSaturday.Name = "lblSaturday";
+            lblSaturday.Size = new Size(80, 15);
+            lblSaturday.TabIndex = 29;
+            lblSaturday.Text = "Saturday (kg):";
             // 
             // FrmAddAnimalIntake
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox6);
-            Controls.Add(label11);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox7);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label10);
+            Controls.Add(txbSaturday);
+            Controls.Add(lblSaturday);
+            Controls.Add(btnHomepage);
+            Controls.Add(btnSaveAnimalIntake);
+            Controls.Add(txbSunday);
+            Controls.Add(txbFriday);
+            Controls.Add(txbThursday);
+            Controls.Add(txbWednesday);
+            Controls.Add(txbTuesday);
+            Controls.Add(txbMonday);
+            Controls.Add(lblSunday);
             Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(comboBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblThursday);
+            Controls.Add(lblFriday);
+            Controls.Add(lblWednesday);
+            Controls.Add(lblTuesday);
+            Controls.Add(lblMonday);
+            Controls.Add(cbxChooseAnimal);
+            Controls.Add(lblChooseAnimal);
+            Controls.Add(lblRecordDailyFeed);
+            Controls.Add(lblAddAnimalIntake);
             Name = "FrmAddAnimalIntake";
-            Text = "FrmAddAnimalIntake";
+            Text = "Record Animal Intake";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private ComboBox comboBox1;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
+        private Label lblAddAnimalIntake;
+        private Label lblRecordDailyFeed;
+        private Label lblChooseAnimal;
+        private ComboBox cbxChooseAnimal;
+        private Label lblMonday;
+        private Label lblTuesday;
+        private Label lblWednesday;
+        private Label lblFriday;
+        private Label lblThursday;
         private Label label9;
-        private Label label10;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox7;
-        private Button button1;
-        private Button button2;
-        private TextBox textBox6;
-        private Label label11;
+        private Label lblSunday;
+        private TextBox txbMonday;
+        private TextBox txbTuesday;
+        private TextBox txbWednesday;
+        private TextBox txbThursday;
+        private TextBox txbFriday;
+        private TextBox txbSunday;
+        private Button btnSaveAnimalIntake;
+        private Button btnHomepage;
+        private TextBox txbSaturday;
+        private Label lblSaturday;
     }
 }

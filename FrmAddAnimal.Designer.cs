@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            lblAddAnimal = new Label();
+            lblAddNewAnimal = new Label();
             btnHomePage = new Button();
-            button1 = new Button();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox2 = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            btnAddAnimal = new Button();
+            txbAnimalName = new TextBox();
+            cbxSpecies = new ComboBox();
+            cbxFoodType = new ComboBox();
+            txbWeeklyBudget = new TextBox();
+            lblAnimalName = new Label();
+            lblSpecies = new Label();
+            lblFoodType = new Label();
+            lblWeeklyBudget = new Label();
             SuspendLayout();
             // 
-            // label1
+            // lblAddAnimal
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 30F);
-            label1.Location = new Point(259, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(353, 54);
-            label1.TabIndex = 0;
-            label1.Text = "Livestock Manager";
+            lblAddAnimal.AutoSize = true;
+            lblAddAnimal.Font = new Font("Segoe UI", 30F);
+            lblAddAnimal.Location = new Point(259, 9);
+            lblAddAnimal.Name = "lblAddAnimal";
+            lblAddAnimal.Size = new Size(353, 54);
+            lblAddAnimal.TabIndex = 0;
+            lblAddAnimal.Text = "Livestock Manager";
             // 
-            // label2
+            // lblAddNewAnimal
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(37, 89);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Add New Animal";
+            lblAddNewAnimal.AutoSize = true;
+            lblAddNewAnimal.Font = new Font("Segoe UI", 12F);
+            lblAddNewAnimal.Location = new Point(37, 89);
+            lblAddNewAnimal.Name = "lblAddNewAnimal";
+            lblAddNewAnimal.Size = new Size(127, 21);
+            lblAddNewAnimal.TabIndex = 1;
+            lblAddNewAnimal.Text = "Add New Animal";
             // 
             // btnHomePage
             // 
@@ -72,117 +72,117 @@
             btnHomePage.UseVisualStyleBackColor = true;
             btnHomePage.Click += btnHomePage_Click;
             // 
-            // button1
+            // btnAddAnimal
             // 
-            button1.Location = new Point(37, 290);
-            button1.Name = "button1";
-            button1.Size = new Size(168, 26);
-            button1.TabIndex = 3;
-            button1.Text = "Add Animal";
-            button1.UseVisualStyleBackColor = true;
+            btnAddAnimal.Location = new Point(37, 290);
+            btnAddAnimal.Name = "btnAddAnimal";
+            btnAddAnimal.Size = new Size(168, 26);
+            btnAddAnimal.TabIndex = 3;
+            btnAddAnimal.Text = "Add Animal";
+            btnAddAnimal.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txbAnimalName
             // 
-            textBox1.Location = new Point(146, 129);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(302, 23);
-            textBox1.TabIndex = 4;
+            txbAnimalName.Location = new Point(146, 129);
+            txbAnimalName.Name = "txbAnimalName";
+            txbAnimalName.Size = new Size(302, 23);
+            txbAnimalName.TabIndex = 4;
             // 
-            // comboBox1
+            // cbxSpecies
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(146, 168);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(302, 23);
-            comboBox1.TabIndex = 5;
+            cbxSpecies.FormattingEnabled = true;
+            cbxSpecies.Location = new Point(146, 168);
+            cbxSpecies.Name = "cbxSpecies";
+            cbxSpecies.Size = new Size(302, 23);
+            cbxSpecies.TabIndex = 5;
             // 
-            // comboBox2
+            // cbxFoodType
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(146, 206);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(302, 23);
-            comboBox2.TabIndex = 6;
+            cbxFoodType.FormattingEnabled = true;
+            cbxFoodType.Location = new Point(146, 206);
+            cbxFoodType.Name = "cbxFoodType";
+            cbxFoodType.Size = new Size(302, 23);
+            cbxFoodType.TabIndex = 6;
             // 
-            // textBox2
+            // txbWeeklyBudget
             // 
-            textBox2.Location = new Point(146, 247);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(302, 23);
-            textBox2.TabIndex = 7;
+            txbWeeklyBudget.Location = new Point(146, 247);
+            txbWeeklyBudget.Name = "txbWeeklyBudget";
+            txbWeeklyBudget.Size = new Size(302, 23);
+            txbWeeklyBudget.TabIndex = 7;
             // 
-            // label3
+            // lblAnimalName
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(37, 132);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 15);
-            label3.TabIndex = 8;
-            label3.Text = "Animal Name";
+            lblAnimalName.AutoSize = true;
+            lblAnimalName.Location = new Point(37, 132);
+            lblAnimalName.Name = "lblAnimalName";
+            lblAnimalName.Size = new Size(80, 15);
+            lblAnimalName.TabIndex = 8;
+            lblAnimalName.Text = "Animal Name";
             // 
-            // label4
+            // lblSpecies
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(37, 171);
-            label4.Name = "label4";
-            label4.Size = new Size(46, 15);
-            label4.TabIndex = 9;
-            label4.Text = "Species";
+            lblSpecies.AutoSize = true;
+            lblSpecies.Location = new Point(37, 171);
+            lblSpecies.Name = "lblSpecies";
+            lblSpecies.Size = new Size(46, 15);
+            lblSpecies.TabIndex = 9;
+            lblSpecies.Text = "Species";
             // 
-            // label5
+            // lblFoodType
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(37, 209);
-            label5.Name = "label5";
-            label5.Size = new Size(61, 15);
-            label5.TabIndex = 10;
-            label5.Text = "Food Type";
+            lblFoodType.AutoSize = true;
+            lblFoodType.Location = new Point(37, 209);
+            lblFoodType.Name = "lblFoodType";
+            lblFoodType.Size = new Size(61, 15);
+            lblFoodType.TabIndex = 10;
+            lblFoodType.Text = "Food Type";
             // 
-            // label6
+            // lblWeeklyBudget
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(37, 250);
-            label6.Name = "label6";
-            label6.Size = new Size(103, 15);
-            label6.TabIndex = 11;
-            label6.Text = "Weekly Budget ($)";
+            lblWeeklyBudget.AutoSize = true;
+            lblWeeklyBudget.Location = new Point(37, 250);
+            lblWeeklyBudget.Name = "lblWeeklyBudget";
+            lblWeeklyBudget.Size = new Size(103, 15);
+            lblWeeklyBudget.TabIndex = 11;
+            lblWeeklyBudget.Text = "Weekly Budget ($)";
             // 
             // FrmAddAnimal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(889, 532);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
+            Controls.Add(lblWeeklyBudget);
+            Controls.Add(lblFoodType);
+            Controls.Add(lblSpecies);
+            Controls.Add(lblAnimalName);
+            Controls.Add(txbWeeklyBudget);
+            Controls.Add(cbxFoodType);
+            Controls.Add(cbxSpecies);
+            Controls.Add(txbAnimalName);
+            Controls.Add(btnAddAnimal);
             Controls.Add(btnHomePage);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblAddNewAnimal);
+            Controls.Add(lblAddAnimal);
             Name = "FrmAddAnimal";
-            Text = "Form1";
+            Text = "Add Animal";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label lblAddAnimal;
+        private Label lblAddNewAnimal;
         private Button btnHomePage;
-        private Button button1;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Button btnAddAnimal;
+        private TextBox txbAnimalName;
+        private ComboBox cbxSpecies;
+        private ComboBox cbxFoodType;
+        private TextBox txbWeeklyBudget;
+        private Label lblAnimalName;
+        private Label lblSpecies;
+        private Label lblFoodType;
+        private Label lblWeeklyBudget;
     }
 }

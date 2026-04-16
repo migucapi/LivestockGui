@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblHomePage = new Label();
             btnAddAnimal = new Button();
             btnRecordAnimalIntake = new Button();
             btnLivestockReport = new Button();
             btnRemoveAnimal = new Button();
-            label2 = new Label();
-            richTextBox1 = new RichTextBox();
+            lblAnimalsOnFarm = new Label();
+            rtbAnimalsOnFarm = new RichTextBox();
             SuspendLayout();
             // 
-            // label1
+            // lblHomePage
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 30F);
-            label1.Location = new Point(169, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(438, 54);
-            label1.TabIndex = 0;
-            label1.Text = "Livestock Manager App";
+            lblHomePage.AutoSize = true;
+            lblHomePage.Font = new Font("Segoe UI", 30F);
+            lblHomePage.Location = new Point(169, 9);
+            lblHomePage.Name = "lblHomePage";
+            lblHomePage.Size = new Size(438, 54);
+            lblHomePage.TabIndex = 0;
+            lblHomePage.Text = "Livestock Manager App";
             // 
             // btnAddAnimal
             // 
@@ -87,36 +87,36 @@
             btnRemoveAnimal.UseVisualStyleBackColor = true;
             btnRemoveAnimal.Click += btnRemoveAnimal_Click;
             // 
-            // label2
+            // lblAnimalsOnFarm
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(24, 81);
-            label2.Name = "label2";
-            label2.Size = new Size(130, 21);
-            label2.TabIndex = 5;
-            label2.Text = "Animals On Farm";
+            lblAnimalsOnFarm.AutoSize = true;
+            lblAnimalsOnFarm.Font = new Font("Segoe UI", 12F);
+            lblAnimalsOnFarm.Location = new Point(24, 81);
+            lblAnimalsOnFarm.Name = "lblAnimalsOnFarm";
+            lblAnimalsOnFarm.Size = new Size(130, 21);
+            lblAnimalsOnFarm.TabIndex = 5;
+            lblAnimalsOnFarm.Text = "Animals On Farm";
             // 
-            // richTextBox1
+            // rtbAnimalsOnFarm
             // 
-            richTextBox1.Location = new Point(24, 102);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(730, 210);
-            richTextBox1.TabIndex = 6;
-            richTextBox1.Text = "";
+            rtbAnimalsOnFarm.Location = new Point(24, 102);
+            rtbAnimalsOnFarm.Name = "rtbAnimalsOnFarm";
+            rtbAnimalsOnFarm.Size = new Size(730, 210);
+            rtbAnimalsOnFarm.TabIndex = 6;
+            rtbAnimalsOnFarm.Text = "";
             // 
             // FrmHomepage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(richTextBox1);
-            Controls.Add(label2);
+            Controls.Add(rtbAnimalsOnFarm);
+            Controls.Add(lblAnimalsOnFarm);
             Controls.Add(btnRemoveAnimal);
             Controls.Add(btnLivestockReport);
             Controls.Add(btnRecordAnimalIntake);
             Controls.Add(btnAddAnimal);
-            Controls.Add(label1);
+            Controls.Add(lblHomePage);
             Name = "FrmHomepage";
             Text = "Homepage";
             ResumeLayout(false);
@@ -125,12 +125,12 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblHomePage;
         private Button btnAddAnimal;
         private Button btnRecordAnimalIntake;
         private Button btnLivestockReport;
         private Button btnRemoveAnimal;
-        private Label label2;
-        private RichTextBox richTextBox1;
+        private Label lblAnimalsOnFarm;
+        private RichTextBox rtbAnimalsOnFarm;
     }
 }
