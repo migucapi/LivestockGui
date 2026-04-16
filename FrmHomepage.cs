@@ -27,5 +27,35 @@ namespace LivestockGui
             frmAddAnimal.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
             frmAddAnimal.Show();
         }
+
+        private void btnRecordAnimalIntake_Click(object sender, EventArgs e)
+        {
+            // Hide current form
+            this.Hide();
+
+            FrmAddAnimalIntake frmAddAnimalIntake = new FrmAddAnimalIntake(farmManager);
+            frmAddAnimalIntake.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
+            frmAddAnimalIntake.Show();
+        }
+
+        private void btnLivestockReport_Click(object sender, EventArgs e)
+        {
+            // Hide current form
+            this.Hide();
+
+            FrmFarmReport frmFarmReport = new FrmFarmReport(farmManager);
+            frmFarmReport.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
+            frmFarmReport.Show();
+        }
+
+        private void btnRemoveAnimal_Click(object sender, EventArgs e)
+        {
+            // Hide current form
+            this.Hide();
+
+            FrmRemoveAnimal frmRemoveAnimal = new FrmRemoveAnimal(farmManager);
+            frmRemoveAnimal.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
+            frmRemoveAnimal.Show();
+        }
     }
 }

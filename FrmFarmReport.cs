@@ -10,9 +10,22 @@ namespace LivestockGui
 {
     public partial class FrmFarmReport : Form
     {
-        public FrmFarmReport()
+        private FarmManager farmManager;
+
+        public FrmFarmReport(FarmManager farmManager)
         {
             InitializeComponent();
+            this.farmManager = farmManager;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Hide current form
+            this.Hide();
+
+            FrmHomepage frmHomePage = new FrmHomepage(farmManager);
+            frmHomePage.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
+            frmHomePage.Show();
         }
     }
 }

@@ -56,7 +56,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(37, 82);
+            label2.Location = new Point(37, 89);
             label2.Name = "label2";
             label2.Size = new Size(127, 21);
             label2.TabIndex = 1;
@@ -78,12 +78,12 @@
             button1.Name = "button1";
             button1.Size = new Size(168, 26);
             button1.TabIndex = 3;
-            button1.Text = "Back to Homepage";
+            button1.Text = "Add Animal";
             button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(167, 129);
+            textBox1.Location = new Point(146, 129);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(302, 23);
             textBox1.TabIndex = 4;
@@ -91,7 +91,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(167, 168);
+            comboBox1.Location = new Point(146, 168);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(302, 23);
             comboBox1.TabIndex = 5;
@@ -99,14 +99,14 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(167, 206);
+            comboBox2.Location = new Point(146, 206);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(302, 23);
             comboBox2.TabIndex = 6;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(167, 247);
+            textBox2.Location = new Point(146, 247);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(302, 23);
             textBox2.TabIndex = 7;

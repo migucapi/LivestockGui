@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             btnAddAnimal = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnRecordAnimalIntake = new Button();
+            btnLivestockReport = new Button();
+            btnRemoveAnimal = new Button();
             label2 = new Label();
             richTextBox1 = new RichTextBox();
             SuspendLayout();
@@ -57,32 +57,35 @@
             btnAddAnimal.UseVisualStyleBackColor = true;
             btnAddAnimal.Click += btnAddAnimal_Click;
             // 
-            // button1
+            // btnRecordAnimalIntake
             // 
-            button1.Location = new Point(578, 354);
-            button1.Name = "button1";
-            button1.Size = new Size(183, 29);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnRecordAnimalIntake.Location = new Point(578, 354);
+            btnRecordAnimalIntake.Name = "btnRecordAnimalIntake";
+            btnRecordAnimalIntake.Size = new Size(183, 29);
+            btnRecordAnimalIntake.TabIndex = 2;
+            btnRecordAnimalIntake.Text = "Record Animal Intake";
+            btnRecordAnimalIntake.UseVisualStyleBackColor = true;
+            btnRecordAnimalIntake.Click += btnRecordAnimalIntake_Click;
             // 
-            // button2
+            // btnLivestockReport
             // 
-            button2.Location = new Point(578, 389);
-            button2.Name = "button2";
-            button2.Size = new Size(183, 29);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnLivestockReport.Location = new Point(578, 389);
+            btnLivestockReport.Name = "btnLivestockReport";
+            btnLivestockReport.Size = new Size(183, 29);
+            btnLivestockReport.TabIndex = 3;
+            btnLivestockReport.Text = "Farm Livestock Report";
+            btnLivestockReport.UseVisualStyleBackColor = true;
+            btnLivestockReport.Click += btnLivestockReport_Click;
             // 
-            // button3
+            // btnRemoveAnimal
             // 
-            button3.Location = new Point(24, 318);
-            button3.Name = "button3";
-            button3.Size = new Size(183, 29);
-            button3.TabIndex = 4;
-            button3.Text = "Remove Animal";
-            button3.UseVisualStyleBackColor = true;
+            btnRemoveAnimal.Location = new Point(24, 318);
+            btnRemoveAnimal.Name = "btnRemoveAnimal";
+            btnRemoveAnimal.Size = new Size(183, 29);
+            btnRemoveAnimal.TabIndex = 4;
+            btnRemoveAnimal.Text = "Remove Animal";
+            btnRemoveAnimal.UseVisualStyleBackColor = true;
+            btnRemoveAnimal.Click += btnRemoveAnimal_Click;
             // 
             // label2
             // 
@@ -109,9 +112,9 @@
             ClientSize = new Size(800, 450);
             Controls.Add(richTextBox1);
             Controls.Add(label2);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnRemoveAnimal);
+            Controls.Add(btnLivestockReport);
+            Controls.Add(btnRecordAnimalIntake);
             Controls.Add(btnAddAnimal);
             Controls.Add(label1);
             Name = "FrmHomepage";
@@ -124,9 +127,9 @@
 
         private Label label1;
         private Button btnAddAnimal;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnRecordAnimalIntake;
+        private Button btnLivestockReport;
+        private Button btnRemoveAnimal;
         private Label label2;
         private RichTextBox richTextBox1;
     }

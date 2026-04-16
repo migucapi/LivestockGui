@@ -8,17 +8,17 @@ using System.Windows.Forms;
 
 namespace LivestockGui
 {
-    public partial class FrmRemoveAnimal : Form
+    public partial class FrmAddAnimalIntake : Form
     {
         private FarmManager farmManager;
 
-        public FrmRemoveAnimal(FarmManager farmManager)
+        public FrmAddAnimalIntake(FarmManager farmManager)
         {
             InitializeComponent();
             this.farmManager = farmManager;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             // Hide current form
             this.Hide();
