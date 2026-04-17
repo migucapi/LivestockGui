@@ -77,6 +77,17 @@ namespace LivestockGui
                 double cost = animal.GetWeeklyCost();
                 MessageBox.Show($"Feed data saved!\n\nWeekly Cost: ${cost:F2}\n{status}",
                     "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // clear fields ready for next entry
+                cbxChooseAnimal.SelectedIndex = -1;
+                txbMonday.Text = "";
+                txbTuesday.Text = "";
+                txbWednesday.Text = "";
+                txbThursday.Text = "";
+                txbFriday.Text = "";
+                txbSaturday.Text = "";
+                txbSunday.Text = "";
+
             }
         }
 

@@ -32,7 +32,7 @@ namespace LivestockGui
         private int maxAnimals;
 
 
-        // COnstructor
+        // Constructor
         public FarmManager()
         {
             animalList = new List<Animal>();
