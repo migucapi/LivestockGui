@@ -14,6 +14,7 @@ namespace LivestockGui
         // Constructor
         private FarmManager farmManager;
 
+
         public FrmAddAnimalIntake(FarmManager farmManager)
         {
             InitializeComponent();
@@ -33,12 +34,9 @@ namespace LivestockGui
         // Buttons
         private void btnHomepage_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
+            this.Close(); // closes form
 
-            FrmHomepage frmHomePage = new FrmHomepage(farmManager);
-            frmHomePage.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmHomePage.Show();
+
         }
 
         private void btnSaveAnimalIntake_Click(object sender, EventArgs e)

@@ -175,18 +175,14 @@ namespace LivestockGui
         // Gets the total feeding cost across all active animals for the week
         public double GetTotalWeeklyCost()
         {
-            int count = 0;
+            double total = 0;
 
             foreach (Animal animal in GetAllAnimals())
             {
-                // Only count if animal is active
-                if (animal.GetIsOnFarm() == true)
-                {
-                    count++;
-                }
+                total += animal.GetWeeklyCost();
             }
 
-            return count++;
+            return total;
         }
 
         // Get Weekly Species Cost
@@ -210,7 +206,7 @@ namespace LivestockGui
         public void AddAnimal(string animalName, string animalSpecies, string foodType, double budget)
         {
             // will not add if farm is full only adds if animal count is less than max animals
-            if (GetAnimalCount() > maxAnimals)
+            if (GetAnimalCount() < maxAnimals)
             {
 
                 // generate a unique ID for the new animal
@@ -268,6 +264,19 @@ namespace LivestockGui
             }
 
             return total;
+        }
+
+        // A list of all animals in a string
+        public List<string> GetAnimalSummaries()
+        {
+            List<string> summaries = new List<string>();
+
+            foreach (Animal a in animalList)
+            {
+                summaries.Add(a.AnimalSummary());
+            }
+
+            return summaries;
         }
 
         // Creates a a summary report and gets it

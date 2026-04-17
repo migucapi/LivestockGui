@@ -1,25 +1,26 @@
 namespace LivestockGui
 {
+
+    // Constructor
     public partial class FrmAddAnimal : Form
     {
         private FarmManager farmManager;
+
 
         public FrmAddAnimal(FarmManager farmManager)
         {
             InitializeComponent();
             this.farmManager = farmManager;
 
+
         }
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
-
-            FrmHomepage frmHomePage = new FrmHomepage(farmManager);
-            frmHomePage.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmHomePage.Show();
+            this.Close(); // closes form
         }
+
+        // Buttons
 
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
@@ -68,10 +69,13 @@ namespace LivestockGui
             string species = cbxSpecies.SelectedItem.ToString();
             string food = cbxFoodType.SelectedItem.ToString();
 
+
             farmManager.AddAnimal(name, species, food, budget);
+
 
             MessageBox.Show($"{name} added successfully!", "Animal Added",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
             // clear fields ready for next entry
             txbAnimalName.Text = "";

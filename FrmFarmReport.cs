@@ -11,7 +11,6 @@ namespace LivestockGui
     public partial class FrmFarmReport : Form
     {
         private FarmManager farmManager;
-
         public FrmFarmReport(FarmManager farmManager)
         {
             InitializeComponent();
@@ -27,12 +26,9 @@ namespace LivestockGui
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
+            this.Close(); // closes form
 
-            FrmHomepage frmHomePage = new FrmHomepage(farmManager);
-            frmHomePage.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmHomePage.Show();
+
         }
 
         private void btnRefreshReport_Click(object sender, EventArgs e)

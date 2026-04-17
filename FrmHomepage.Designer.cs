@@ -34,8 +34,7 @@
             btnLivestockReport = new Button();
             btnRemoveAnimal = new Button();
             lblAnimalsOnFarm = new Label();
-            rtbAnimalsOnFarm = new RichTextBox();
-            btnRefresh = new Button();
+            rtbAnimals = new RichTextBox();
             SuspendLayout();
             // 
             // lblHomePage
@@ -60,7 +59,7 @@
             // 
             // btnRecordAnimalIntake
             // 
-            btnRecordAnimalIntake.Location = new Point(578, 354);
+            btnRecordAnimalIntake.Location = new Point(388, 354);
             btnRecordAnimalIntake.Name = "btnRecordAnimalIntake";
             btnRecordAnimalIntake.Size = new Size(183, 29);
             btnRecordAnimalIntake.TabIndex = 2;
@@ -70,7 +69,7 @@
             // 
             // btnLivestockReport
             // 
-            btnLivestockReport.Location = new Point(578, 389);
+            btnLivestockReport.Location = new Point(578, 354);
             btnLivestockReport.Name = "btnLivestockReport";
             btnLivestockReport.Size = new Size(183, 29);
             btnLivestockReport.TabIndex = 3;
@@ -98,30 +97,20 @@
             lblAnimalsOnFarm.TabIndex = 5;
             lblAnimalsOnFarm.Text = "Animals On Farm";
             // 
-            // rtbAnimalsOnFarm
+            // rtbAnimals
             // 
-            rtbAnimalsOnFarm.Location = new Point(24, 102);
-            rtbAnimalsOnFarm.Name = "rtbAnimalsOnFarm";
-            rtbAnimalsOnFarm.Size = new Size(730, 210);
-            rtbAnimalsOnFarm.TabIndex = 6;
-            rtbAnimalsOnFarm.Text = "";
-            // 
-            // btnRefresh
-            // 
-            btnRefresh.Location = new Point(24, 319);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(183, 29);
-            btnRefresh.TabIndex = 7;
-            btnRefresh.Text = "Refresh";
-            btnRefresh.UseVisualStyleBackColor = true;
+            rtbAnimals.Location = new Point(25, 106);
+            rtbAnimals.Name = "rtbAnimals";
+            rtbAnimals.Size = new Size(736, 206);
+            rtbAnimals.TabIndex = 8;
+            rtbAnimals.Text = "";
             // 
             // FrmHomepage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnRefresh);
-            Controls.Add(rtbAnimalsOnFarm);
+            Controls.Add(rtbAnimals);
             Controls.Add(lblAnimalsOnFarm);
             Controls.Add(btnRemoveAnimal);
             Controls.Add(btnLivestockReport);
@@ -142,7 +131,6 @@
         private Button btnLivestockReport;
         private Button btnRemoveAnimal;
         private Label lblAnimalsOnFarm;
-        private RichTextBox rtbAnimalsOnFarm;
-        private Button btnRefresh;
+        private RichTextBox rtbAnimals;
     }
 }

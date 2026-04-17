@@ -10,57 +10,74 @@ using static System.Windows.Forms.DataFormats;
 namespace LivestockGui
 {
 
+
     // Constructor
     public partial class FrmHomepage : Form
     {
-        FarmManager farmManager;
+        private FarmManager farmManager;
+
         public FrmHomepage(FarmManager farmManager)
         {
             InitializeComponent();
             this.farmManager = farmManager;
+            RefreshAnimalList();
+            rtbAnimals.ReadOnly = true;
+
+
         }
+
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            RefreshAnimalList();
+        }
+
+        public void RefreshAnimalList()
+        {
+
+            rtbAnimals.Clear();
+
+            foreach (string summary in farmManager.GetAnimalSummaries())
+            {
+                rtbAnimals.AppendText(summary + Environment.NewLine);
+            }
+        }
+
 
 
 
         // Buttons leading to other pages
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
-
             FrmAddAnimal frmAddAnimal = new FrmAddAnimal(farmManager);
-            frmAddAnimal.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmAddAnimal.Show();
+            frmAddAnimal.ShowDialog(); 
+
+            RefreshAnimalList(); 
+
         }
 
         private void btnRecordAnimalIntake_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
-
             FrmAddAnimalIntake frmAddAnimalIntake = new FrmAddAnimalIntake(farmManager);
-            frmAddAnimalIntake.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmAddAnimalIntake.Show();
+            frmAddAnimalIntake.ShowDialog();
+
+            RefreshAnimalList();
         }
 
         private void btnLivestockReport_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
-
             FrmFarmReport frmFarmReport = new FrmFarmReport(farmManager);
-            frmFarmReport.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmFarmReport.Show();
+            frmFarmReport.ShowDialog();
+
+            RefreshAnimalList();
         }
 
         private void btnRemoveAnimal_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
-
             FrmRemoveAnimal frmRemoveAnimal = new FrmRemoveAnimal(farmManager);
-            frmRemoveAnimal.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmRemoveAnimal.Show();
+            frmRemoveAnimal.ShowDialog();
+
+            RefreshAnimalList();
         }
     }
 }

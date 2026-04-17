@@ -10,15 +10,16 @@ namespace LivestockGui
 {
     public partial class FrmRemoveAnimal : Form
     {
-        private FarmManager farmManager;
+
 
         // Constructor
-
+        private FarmManager farmManager;
         public FrmRemoveAnimal(FarmManager farmManager)
         {
             InitializeComponent();
             this.farmManager = farmManager;
             PopulateAnimalDropdown();
+
         }
 
         private void PopulateAnimalDropdown()
@@ -32,12 +33,9 @@ namespace LivestockGui
         // Buttons
         private void btnHomepage_Click(object sender, EventArgs e)
         {
-            // Hide current form
-            this.Hide();
+            this.Close(); // closes form
 
-            FrmHomepage frmHomePage = new FrmHomepage(farmManager);
-            frmHomePage.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
-            frmHomePage.Show();
+
         }
 
         private void btnRemoveAnimal_Click(object sender, EventArgs e)
