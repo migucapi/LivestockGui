@@ -75,7 +75,7 @@ namespace LivestockGui
             {
                 string status = animal.CheckBudgetStatus();
                 double cost = animal.GetWeeklyCost();
-                MessageBox.Show($"Feed data saved!\n\nWeekly Cost: ${cost:F2}\nBudget Status: {status}",
+                MessageBox.Show($"Feed data saved!\n\nWeekly Cost: ${cost:F2}\n{status}",
                     "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

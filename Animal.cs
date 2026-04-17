@@ -11,7 +11,6 @@ namespace LivestockGui
         private string animalName;
         private string animalSpecies;
         private string animalId;
-        private double farmBudget;
         private bool isOnFarm;
         private double foodCostPerKg;
         private double[] dailyFoodKg; // stores food intake
@@ -28,7 +27,7 @@ namespace LivestockGui
             this.animalName = animalName;
             this.animalSpecies = animalSpecies;
             this.foodCostPerKg = foodCostPerKg;
-            this.farmBudget = farmBudget;
+            this.budget = budget;
 
             isOnFarm = true;
             dailyFoodKg = new double[7];
@@ -65,7 +64,7 @@ namespace LivestockGui
 
         public double GetBudget()
         {
-            return farmBudget;
+            return budget;
         }
 
         // Setters
@@ -119,21 +118,21 @@ namespace LivestockGui
         // Budget
         public bool CheckBudget()
         {
-            return GetWeeklyCost() > farmBudget;
+            return GetWeeklyCost() > budget;
         }
 
         // Budget status and string return
         public string CheckBudgetStatus()
         {
             double weeklyCost = GetWeeklyCost();
-            double difference = Math.Abs(weeklyCost - farmBudget);
+            double difference = Math.Abs(weeklyCost - budget);
 
-            if (weeklyCost > farmBudget)
+            if (weeklyCost > budget)
             {
                 return $"Over budget by ${difference:F2}";
             }
 
-            else if (weeklyCost == farmBudget)
+            else if (weeklyCost == budget)
             {
                 return "Exactly on budget";
             }
@@ -172,7 +171,7 @@ namespace LivestockGui
             info += $"\n\nTotal Intake:  {GetWeeklyIntake():F2} kg" +
                     $"\nDaily Average: {GetDailyAverage():F2} kg" +
                     $"\nWeekly Cost:   ${GetWeeklyCost():F2}" +
-                    $"\nBudget:        ${farmBudget:F2}" +
+                    $"\nBudget:        ${budget:F2}" +
                     $"\nStatus:        {CheckBudgetStatus()}";
 
             return info;

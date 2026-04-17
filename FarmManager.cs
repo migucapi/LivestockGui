@@ -250,21 +250,6 @@ namespace LivestockGui
         }
 
 
-        // Gets the total weekly cost for all animals of a certain species
-        public double GetTotalSpeciesWeeklyCost(string species)
-        {
-            double total = 0;
-
-            foreach (Animal animal in GetAllAnimals())
-            {
-                if (animal.GetAnimalSpecies().ToLower() == species.ToLower())
-                {
-                    total += animal.GetWeeklyCost();
-                }
-            }
-
-            return total;
-        }
 
         // A list of all animals in a string
         public List<string> GetAnimalSummaries()
