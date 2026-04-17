@@ -170,6 +170,7 @@ namespace LivestockGui
             return activeAnimals;
         }
 
+
         // Get Weekly Cost
         // Gets the total feeding cost across all active animals for the week
         public double GetTotalWeeklyCost()

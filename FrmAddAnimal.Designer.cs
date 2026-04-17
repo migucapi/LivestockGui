@@ -80,6 +80,7 @@
             btnAddAnimal.TabIndex = 3;
             btnAddAnimal.Text = "Add Animal";
             btnAddAnimal.UseVisualStyleBackColor = true;
+            btnAddAnimal.Click += btnAddAnimal_Click;
             // 
             // txbAnimalName
             // 
@@ -91,6 +92,7 @@
             // cbxSpecies
             // 
             cbxSpecies.FormattingEnabled = true;
+            cbxSpecies.Items.AddRange(new object[] { "Cow", "Sheep", "Pig", "Chicken", "Horse", "Goat", "Duck", "Alpaca", "Deer", "Turkey" });
             cbxSpecies.Location = new Point(146, 168);
             cbxSpecies.Name = "cbxSpecies";
             cbxSpecies.Size = new Size(302, 23);
@@ -99,6 +101,7 @@
             // cbxFoodType
             // 
             cbxFoodType.FormattingEnabled = true;
+            cbxFoodType.Items.AddRange(new object[] { "Hay", "Grain", "Silage", "Pellets", "Grass", "Corn", "Fishmeal", "Molasses", "Straw", "Vegetables" });
             cbxFoodType.Location = new Point(146, 206);
             cbxFoodType.Name = "cbxFoodType";
             cbxFoodType.Size = new Size(302, 23);

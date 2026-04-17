@@ -15,6 +15,8 @@ namespace LivestockGui
         private bool isOnFarm;
         private double foodCostPerKg;
         private double[] dailyFoodKg; // stores food intake
+        private string? foodType;
+        private double budget;
 
 
         // Methods
@@ -30,6 +32,14 @@ namespace LivestockGui
 
             isOnFarm = true;
             dailyFoodKg = new double[7];
+        }
+
+        public Animal(string animalName, string? animalSpecies, string? foodType, double budget)
+        {
+            this.animalName = animalName;
+            this.animalSpecies = animalSpecies;
+            this.foodType = foodType;
+            this.budget = budget;
         }
 
         // Getters

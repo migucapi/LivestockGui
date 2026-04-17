@@ -35,6 +35,7 @@
             btnRemoveAnimal = new Button();
             lblAnimalsOnFarm = new Label();
             rtbAnimalsOnFarm = new RichTextBox();
+            btnRefresh = new Button();
             SuspendLayout();
             // 
             // lblHomePage
@@ -79,7 +80,7 @@
             // 
             // btnRemoveAnimal
             // 
-            btnRemoveAnimal.Location = new Point(24, 318);
+            btnRemoveAnimal.Location = new Point(388, 319);
             btnRemoveAnimal.Name = "btnRemoveAnimal";
             btnRemoveAnimal.Size = new Size(183, 29);
             btnRemoveAnimal.TabIndex = 4;
@@ -105,11 +106,21 @@
             rtbAnimalsOnFarm.TabIndex = 6;
             rtbAnimalsOnFarm.Text = "";
             // 
+            // btnRefresh
+            // 
+            btnRefresh.Location = new Point(24, 319);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(183, 29);
+            btnRefresh.TabIndex = 7;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            // 
             // FrmHomepage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRefresh);
             Controls.Add(rtbAnimalsOnFarm);
             Controls.Add(lblAnimalsOnFarm);
             Controls.Add(btnRemoveAnimal);
@@ -132,5 +143,6 @@
         private Button btnRemoveAnimal;
         private Label lblAnimalsOnFarm;
         private RichTextBox rtbAnimalsOnFarm;
+        private Button btnRefresh;
     }
 }

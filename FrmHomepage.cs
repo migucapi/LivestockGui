@@ -9,6 +9,8 @@ using static System.Windows.Forms.DataFormats;
 
 namespace LivestockGui
 {
+
+    // Constructor
     public partial class FrmHomepage : Form
     {
         FarmManager farmManager;
@@ -18,6 +20,9 @@ namespace LivestockGui
             this.farmManager = farmManager;
         }
 
+
+
+        // Buttons leading to other pages
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
             // Hide current form

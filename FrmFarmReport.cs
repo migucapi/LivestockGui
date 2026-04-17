@@ -16,7 +16,14 @@ namespace LivestockGui
         {
             InitializeComponent();
             this.farmManager = farmManager;
+            GenerateReport();
         }
+
+        private void GenerateReport()
+        {
+            rtbLivestockReport.Text = farmManager.GetSummaryReport();
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -26,6 +33,11 @@ namespace LivestockGui
             FrmHomepage frmHomePage = new FrmHomepage(farmManager);
             frmHomePage.FormClosed += (s, args) => this.Close(); // Close Form1 when Form2 closes
             frmHomePage.Show();
+        }
+
+        private void btnRefreshReport_Click(object sender, EventArgs e)
+        {
+            GenerateReport();
         }
     }
 }

@@ -63,6 +63,7 @@
             btnRefreshReport.TabIndex = 7;
             btnRefreshReport.Text = "Refresh Report";
             btnRefreshReport.UseVisualStyleBackColor = true;
+            btnRefreshReport.Click += btnRefreshReport_Click;
             // 
             // btnHomepage
             // 

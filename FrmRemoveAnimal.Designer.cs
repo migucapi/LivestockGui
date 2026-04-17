@@ -82,7 +82,7 @@
             btnHomepage.TabIndex = 5;
             btnHomepage.Text = "Back to Homepage";
             btnHomepage.UseVisualStyleBackColor = true;
-            btnHomepage.Click += button1_Click;
+            btnHomepage.Click += btnHomepage_Click;
             // 
             // btnRemoveAnimal
             // 
@@ -92,6 +92,7 @@
             btnRemoveAnimal.TabIndex = 6;
             btnRemoveAnimal.Text = "Remove Animal";
             btnRemoveAnimal.UseVisualStyleBackColor = true;
+            btnRemoveAnimal.Click += btnRemoveAnimal_Click;
             // 
             // FrmRemoveAnimal
             // 

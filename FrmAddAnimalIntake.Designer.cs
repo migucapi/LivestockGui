@@ -45,10 +45,10 @@
             txbThursday = new TextBox();
             txbFriday = new TextBox();
             txbSunday = new TextBox();
-            btnSaveAnimalIntake = new Button();
             btnHomepage = new Button();
             txbSaturday = new TextBox();
             lblSaturday = new Label();
+            btnRecordAnimalFeedData = new Button();
             SuspendLayout();
             // 
             // lblAddAnimalIntake
@@ -191,15 +191,6 @@
             txbSunday.Size = new Size(257, 23);
             txbSunday.TabIndex = 24;
             // 
-            // btnSaveAnimalIntake
-            // 
-            btnSaveAnimalIntake.Location = new Point(12, 336);
-            btnSaveAnimalIntake.Name = "btnSaveAnimalIntake";
-            btnSaveAnimalIntake.Size = new Size(174, 28);
-            btnSaveAnimalIntake.TabIndex = 25;
-            btnSaveAnimalIntake.Text = "Save Animal Intake";
-            btnSaveAnimalIntake.UseVisualStyleBackColor = true;
-            // 
             // btnHomepage
             // 
             btnHomepage.Location = new Point(192, 336);
@@ -208,7 +199,7 @@
             btnHomepage.TabIndex = 26;
             btnHomepage.Text = "Back to Homepage";
             btnHomepage.UseVisualStyleBackColor = true;
-            btnHomepage.Click += button2_Click;
+            btnHomepage.Click += btnHomepage_Click;
             // 
             // txbSaturday
             // 
@@ -226,15 +217,25 @@
             lblSaturday.TabIndex = 29;
             lblSaturday.Text = "Saturday (kg):";
             // 
+            // btnRecordAnimalFeedData
+            // 
+            btnRecordAnimalFeedData.Location = new Point(12, 336);
+            btnRecordAnimalFeedData.Name = "btnRecordAnimalFeedData";
+            btnRecordAnimalFeedData.Size = new Size(174, 28);
+            btnRecordAnimalFeedData.TabIndex = 31;
+            btnRecordAnimalFeedData.Text = "Record Animal Feed Data";
+            btnRecordAnimalFeedData.UseVisualStyleBackColor = true;
+            btnRecordAnimalFeedData.Click += btnSaveAnimalIntake_Click;
+            // 
             // FrmAddAnimalIntake
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRecordAnimalFeedData);
             Controls.Add(txbSaturday);
             Controls.Add(lblSaturday);
             Controls.Add(btnHomepage);
-            Controls.Add(btnSaveAnimalIntake);
             Controls.Add(txbSunday);
             Controls.Add(txbFriday);
             Controls.Add(txbThursday);
@@ -281,5 +282,6 @@
         private Button btnHomepage;
         private TextBox txbSaturday;
         private Label lblSaturday;
+        private Button btnRecordAnimalFeedData;
     }
 }
