@@ -22,6 +22,7 @@ namespace LivestockGui
 
         }
 
+        // Fills choose animal combobox
         private void PopulateAnimalDropdown()
         {
             cbxChooseAnimal.Items.Clear();
@@ -31,13 +32,14 @@ namespace LivestockGui
 
 
         // Buttons
+        // Homepage Button
         private void btnHomepage_Click(object sender, EventArgs e)
         {
             this.Close(); // closes form
 
-
         }
 
+        // Remove Animal Button
         private void btnRemoveAnimal_Click(object sender, EventArgs e)
         {
             if (cbxChooseAnimal.SelectedIndex == -1)

@@ -23,6 +23,7 @@ namespace LivestockGui
 
         }
 
+        // Fills choose animal combobox
         private void PopulateAnimalDropdown()
         {
             cbxChooseAnimal.Items.Clear();
@@ -32,13 +33,14 @@ namespace LivestockGui
 
 
         // Buttons
+        // Homepage Button
         private void btnHomepage_Click(object sender, EventArgs e)
         {
             this.Close(); // closes form
 
-
         }
 
+        // Save Animal Intake Button
         private void btnSaveAnimalIntake_Click(object sender, EventArgs e)
         {
             // check animal is selected
@@ -49,7 +51,7 @@ namespace LivestockGui
                 return;
             }
 
-            // get the ID from the selected item
+            // get the ID from the selected animal
             string selected = cbxChooseAnimal.SelectedItem.ToString();
             string id = selected.Split('|')[0].Trim();
 

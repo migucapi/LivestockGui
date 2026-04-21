@@ -193,7 +193,7 @@
             // 
             // btnHomepage
             // 
-            btnHomepage.Location = new Point(192, 336);
+            btnHomepage.Location = new Point(192, 366);
             btnHomepage.Name = "btnHomepage";
             btnHomepage.Size = new Size(174, 28);
             btnHomepage.TabIndex = 26;
@@ -219,7 +219,7 @@
             // 
             // btnRecordAnimalFeedData
             // 
-            btnRecordAnimalFeedData.Location = new Point(12, 336);
+            btnRecordAnimalFeedData.Location = new Point(192, 410);
             btnRecordAnimalFeedData.Name = "btnRecordAnimalFeedData";
             btnRecordAnimalFeedData.Size = new Size(174, 28);
             btnRecordAnimalFeedData.TabIndex = 31;

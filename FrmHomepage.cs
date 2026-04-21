@@ -22,16 +22,16 @@ namespace LivestockGui
             this.farmManager = farmManager;
             RefreshAnimalList();
             rtbAnimals.ReadOnly = true;
-
-
         }
-
+        
+        // Refreshes Animal list when page is opened
         protected override void OnActivated(EventArgs e)
         {
             base.OnActivated(e);
             RefreshAnimalList();
         }
-
+        
+        // Animal List Refresh
         public void RefreshAnimalList()
         {
 
@@ -44,9 +44,8 @@ namespace LivestockGui
         }
 
 
-
-
         // Buttons leading to other pages
+        // Add Animal Page Button
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
             FrmAddAnimal frmAddAnimal = new FrmAddAnimal(farmManager);
@@ -56,6 +55,7 @@ namespace LivestockGui
 
         }
 
+        // Save Animal Intake Page Button
         private void btnRecordAnimalIntake_Click(object sender, EventArgs e)
         {
             FrmAddAnimalIntake frmAddAnimalIntake = new FrmAddAnimalIntake(farmManager);
@@ -64,6 +64,7 @@ namespace LivestockGui
             RefreshAnimalList();
         }
 
+        // Report Page Button
         private void btnLivestockReport_Click(object sender, EventArgs e)
         {
             FrmFarmReport frmFarmReport = new FrmFarmReport(farmManager);
@@ -72,6 +73,7 @@ namespace LivestockGui
             RefreshAnimalList();
         }
 
+        // Remove Animal Page Button
         private void btnRemoveAnimal_Click(object sender, EventArgs e)
         {
             FrmRemoveAnimal frmRemoveAnimal = new FrmRemoveAnimal(farmManager);

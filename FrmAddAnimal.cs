@@ -11,17 +11,16 @@ namespace LivestockGui
         {
             InitializeComponent();
             this.farmManager = farmManager;
-
-
         }
 
+        // Buttons
+        // Homepage Button
         private void btnHomePage_Click(object sender, EventArgs e)
         {
             this.Close(); // closes form
         }
 
-        // Buttons
-
+        // Add Animal Button
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
             // validate name
@@ -56,7 +55,7 @@ namespace LivestockGui
                 return;
             }
 
-            // check farm not full
+            // check if the farm is full or not
             if (farmManager.GetAnimalCount() >= farmManager.GetMaxAnimals())
             {
                 MessageBox.Show("Farm is full — maximum animals reached.", "Farm Full",
@@ -64,7 +63,7 @@ namespace LivestockGui
                 return;
             }
 
-            // all valid — add the animal
+            // if everything's all valid add the animal
             string name = txbAnimalName.Text.Trim();
             string species = cbxSpecies.SelectedItem.ToString();
             string food = cbxFoodType.SelectedItem.ToString();

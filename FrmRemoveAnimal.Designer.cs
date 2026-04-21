@@ -60,7 +60,7 @@
             // lblChooseAnimal
             // 
             lblChooseAnimal.AutoSize = true;
-            lblChooseAnimal.Location = new Point(42, 126);
+            lblChooseAnimal.Location = new Point(299, 146);
             lblChooseAnimal.Name = "lblChooseAnimal";
             lblChooseAnimal.Size = new Size(148, 15);
             lblChooseAnimal.TabIndex = 3;
@@ -69,7 +69,7 @@
             // cbxChooseAnimal
             // 
             cbxChooseAnimal.FormattingEnabled = true;
-            cbxChooseAnimal.Location = new Point(42, 144);
+            cbxChooseAnimal.Location = new Point(226, 225);
             cbxChooseAnimal.Name = "cbxChooseAnimal";
             cbxChooseAnimal.Size = new Size(278, 23);
             cbxChooseAnimal.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             // btnRemoveAnimal
             // 
-            btnRemoveAnimal.Location = new Point(42, 185);
+            btnRemoveAnimal.Location = new Point(287, 317);
             btnRemoveAnimal.Name = "btnRemoveAnimal";
             btnRemoveAnimal.Size = new Size(160, 27);
             btnRemoveAnimal.TabIndex = 6;
