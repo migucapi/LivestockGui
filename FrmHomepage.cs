@@ -24,12 +24,6 @@ namespace LivestockGui
             rtbAnimals.ReadOnly = true;
         }
         
-        // Refreshes Animal list when page is opened
-        protected override void OnActivated(EventArgs e)
-        {
-            base.OnActivated(e);
-            RefreshAnimalList();
-        }
         
         // Animal List Refresh
         public void RefreshAnimalList()

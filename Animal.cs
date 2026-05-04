@@ -14,7 +14,6 @@ namespace LivestockGui
         private bool isOnFarm;
         private double foodCostPerKg;
         private double[] dailyFoodKg; // stores food intake
-        private string? foodType;
         private double budget;
 
 

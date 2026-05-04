@@ -254,7 +254,7 @@ namespace LivestockGui
         {
             List<string> summaries = new List<string>();
 
-            foreach (Animal a in animalList)
+            foreach (Animal a in GetAllAnimals())
             {
                 summaries.Add(a.AnimalSummary());
             }
