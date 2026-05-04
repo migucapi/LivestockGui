@@ -49,7 +49,7 @@
             // 
             // btnAddAnimal
             // 
-            btnAddAnimal.Location = new Point(577, 318);
+            btnAddAnimal.Location = new Point(25, 318);
             btnAddAnimal.Name = "btnAddAnimal";
             btnAddAnimal.Size = new Size(184, 30);
             btnAddAnimal.TabIndex = 1;
@@ -59,9 +59,9 @@
             // 
             // btnRecordAnimalIntake
             // 
-            btnRecordAnimalIntake.Location = new Point(96, 376);
+            btnRecordAnimalIntake.Location = new Point(397, 319);
             btnRecordAnimalIntake.Name = "btnRecordAnimalIntake";
-            btnRecordAnimalIntake.Size = new Size(183, 29);
+            btnRecordAnimalIntake.Size = new Size(175, 29);
             btnRecordAnimalIntake.TabIndex = 2;
             btnRecordAnimalIntake.Text = "Record Animal Intake";
             btnRecordAnimalIntake.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             // 
             // btnLivestockReport
             // 
-            btnLivestockReport.Location = new Point(388, 319);
+            btnLivestockReport.Location = new Point(578, 318);
             btnLivestockReport.Name = "btnLivestockReport";
             btnLivestockReport.Size = new Size(183, 29);
             btnLivestockReport.TabIndex = 3;
@@ -79,9 +79,9 @@
             // 
             // btnRemoveAnimal
             // 
-            btnRemoveAnimal.Location = new Point(96, 341);
+            btnRemoveAnimal.Location = new Point(215, 319);
             btnRemoveAnimal.Name = "btnRemoveAnimal";
-            btnRemoveAnimal.Size = new Size(183, 29);
+            btnRemoveAnimal.Size = new Size(176, 29);
             btnRemoveAnimal.TabIndex = 4;
             btnRemoveAnimal.Text = "Remove Animal";
             btnRemoveAnimal.UseVisualStyleBackColor = true;

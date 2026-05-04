@@ -25,10 +25,10 @@ namespace LivestockGui
         // The available species types the user can choose from
         private List<string> animalTypes;
 
-        // food types list (uses food type price)
+        // Food types list (uses food type price)
         private List<string> foodTypes;
 
-
+        // Max Animals
         private int maxAnimals;
 
 
@@ -51,7 +51,6 @@ namespace LivestockGui
                 "Alpaca",
                 "Deer",
                 "Turkey",
-
             };
 
             // Food Types 
@@ -67,7 +66,6 @@ namespace LivestockGui
                 "Molasses",
                 "Straw",
                 "Vegetables",
-
             };
 
         }
@@ -202,7 +200,7 @@ namespace LivestockGui
 
         // Animal and Food
         // Adds Animal
-        // Creates animal and adds to lis
+        // Creates animal and adds to list
         public void AddAnimal(string animalName, string animalSpecies, string foodType, double budget)
         {
             // will not add if farm is full only adds if animal count is less than max animals

@@ -33,13 +33,6 @@ namespace LivestockGui
             dailyFoodKg = new double[7];
         }
 
-        public Animal(string animalName, string? animalSpecies, string? foodType, double budget)
-        {
-            this.animalName = animalName;
-            this.animalSpecies = animalSpecies;
-            this.foodType = foodType;
-            this.budget = budget;
-        }
 
         // Getters
         public string GetAnimalId()

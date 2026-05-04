@@ -64,7 +64,7 @@
             // 
             // btnHomePage
             // 
-            btnHomePage.Location = new Point(639, 421);
+            btnHomePage.Location = new Point(213, 288);
             btnHomePage.Name = "btnHomePage";
             btnHomePage.Size = new Size(168, 26);
             btnHomePage.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // btnAddAnimal
             // 
-            btnAddAnimal.Location = new Point(465, 421);
+            btnAddAnimal.Location = new Point(39, 288);
             btnAddAnimal.Name = "btnAddAnimal";
             btnAddAnimal.Size = new Size(168, 26);
             btnAddAnimal.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             // txbAnimalName
             // 
-            txbAnimalName.Location = new Point(259, 185);
+            txbAnimalName.Location = new Point(149, 127);
             txbAnimalName.Name = "txbAnimalName";
             txbAnimalName.Size = new Size(302, 23);
             txbAnimalName.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             cbxSpecies.FormattingEnabled = true;
             cbxSpecies.Items.AddRange(new object[] { "Cow", "Sheep", "Pig", "Chicken", "Horse", "Goat", "Duck", "Alpaca", "Deer", "Turkey" });
-            cbxSpecies.Location = new Point(259, 224);
+            cbxSpecies.Location = new Point(149, 166);
             cbxSpecies.Name = "cbxSpecies";
             cbxSpecies.Size = new Size(302, 23);
             cbxSpecies.TabIndex = 5;
@@ -102,14 +102,14 @@
             // 
             cbxFoodType.FormattingEnabled = true;
             cbxFoodType.Items.AddRange(new object[] { "Hay", "Grain", "Silage", "Pellets", "Grass", "Corn", "Fishmeal", "Molasses", "Straw", "Vegetables" });
-            cbxFoodType.Location = new Point(259, 262);
+            cbxFoodType.Location = new Point(149, 204);
             cbxFoodType.Name = "cbxFoodType";
             cbxFoodType.Size = new Size(302, 23);
             cbxFoodType.TabIndex = 6;
             // 
             // txbWeeklyBudget
             // 
-            txbWeeklyBudget.Location = new Point(259, 303);
+            txbWeeklyBudget.Location = new Point(149, 245);
             txbWeeklyBudget.Name = "txbWeeklyBudget";
             txbWeeklyBudget.Size = new Size(302, 23);
             txbWeeklyBudget.TabIndex = 7;
@@ -117,7 +117,7 @@
             // lblAnimalName
             // 
             lblAnimalName.AutoSize = true;
-            lblAnimalName.Location = new Point(150, 188);
+            lblAnimalName.Location = new Point(40, 130);
             lblAnimalName.Name = "lblAnimalName";
             lblAnimalName.Size = new Size(80, 15);
             lblAnimalName.TabIndex = 8;
@@ -126,7 +126,7 @@
             // lblSpecies
             // 
             lblSpecies.AutoSize = true;
-            lblSpecies.Location = new Point(150, 227);
+            lblSpecies.Location = new Point(40, 169);
             lblSpecies.Name = "lblSpecies";
             lblSpecies.Size = new Size(46, 15);
             lblSpecies.TabIndex = 9;
@@ -135,7 +135,7 @@
             // lblFoodType
             // 
             lblFoodType.AutoSize = true;
-            lblFoodType.Location = new Point(150, 265);
+            lblFoodType.Location = new Point(40, 207);
             lblFoodType.Name = "lblFoodType";
             lblFoodType.Size = new Size(61, 15);
             lblFoodType.TabIndex = 10;
@@ -144,7 +144,7 @@
             // lblWeeklyBudget
             // 
             lblWeeklyBudget.AutoSize = true;
-            lblWeeklyBudget.Location = new Point(150, 306);
+            lblWeeklyBudget.Location = new Point(40, 248);
             lblWeeklyBudget.Name = "lblWeeklyBudget";
             lblWeeklyBudget.Size = new Size(103, 15);
             lblWeeklyBudget.TabIndex = 11;
