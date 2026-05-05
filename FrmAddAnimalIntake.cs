@@ -20,6 +20,7 @@ namespace LivestockGui
             InitializeComponent();
             this.farmManager = farmManager;
             PopulateAnimalDropdown();
+            cbxChooseAnimal.DropDownStyle = ComboBoxStyle.DropDownList;
 
         }
 

@@ -1,3 +1,5 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace LivestockGui
 {
 
@@ -11,6 +13,8 @@ namespace LivestockGui
         {
             InitializeComponent();
             this.farmManager = farmManager;
+            cbxSpecies.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxFoodType.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         // Buttons
